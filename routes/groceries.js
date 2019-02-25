@@ -13,4 +13,10 @@ router.post('/', (req, res) => {
         })
   })
 
+  router.post('/new', (req , res) => {
+    db.collection('groceryList').save(req.body, (err, result) =>{
+        
+    })
+  }
+
 module.exports = router 
